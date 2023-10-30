@@ -30,17 +30,6 @@ wget https://repo.mongodb.org/apt/ubuntu/dists/focal/mongodb-org/7.0/multiverse/
 sudo dpkg -i mongodb-org-server_7.0.2_amd64.deb
 sudo systemctl start mongod
 ```
-Install MongoDB Shell (version 2.0.2)
-```
-wget https://downloads.mongodb.com/compass/mongodb-mongosh_2.0.2_arm64.deb
-sudo dpkg -i mongodb-mongosh_2.0.2_arm64.deb
-```
-Create mongodb collection by running below scripts.
-```
-mongosh
-db.createCollection('books_info')
-exit
-```
 
 ### Starting server on your machine
 You can access the application at `localhost:3000` and the swagger ui explorer at `localhost:3000/explorer`
