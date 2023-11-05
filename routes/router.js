@@ -33,26 +33,6 @@ const Books = require('../models/Books');
  */
 
 /**
- * @openapi
- * /:
- *   get:
- *     description: Welcome to swagger-jsdoc!
- *     responses:
- *       200:
- *         description: Returns a mysterious string.
- */
-router.get('/', async(req, res) => {
-  try {
-    res.status(200);
-    return res.send({success: true, data: 'Welcome to book managing apps'});
-  } catch (error) {
-    console.error(error);
-    res.status(400);
-    return res.send({success: false, data: 'Something went wrong'});
-  }
-});
-
-/**
  * @swagger
  * /books:
  *  get:
