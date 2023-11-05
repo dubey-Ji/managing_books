@@ -12,12 +12,12 @@ sudo apt-get install wget -y
 ### Install NVM and node version 20.9.0
 ```
 touch ~/.bash_profile
-wget -q0- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash
 source ~/.bash_profile
 nvm install 20.9.0
 nvm use 20.9.0
 nvm alias default 20.9.0
-npm config set registery http://registery.npmjs.org/
+npm config set registry http://registery.npmjs.org/
 ```
 
 ### Install local dependencies from project directory
