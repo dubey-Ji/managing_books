@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    networks:
+      - work
+    depends_on:
+      - mongo-server
+  mongo-server:
+    image: mongo
+    networks:
+      - work
+networks:
+  work:
+    driver: bridge
